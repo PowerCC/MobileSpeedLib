@@ -1,0 +1,48 @@
+{
+  "name": "MobileSpeedLib",
+  "version": "0.1.0",
+  "summary": "Mobile Speed Test.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/PowerCC/MobileSpeedLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zoucheng@live.cn": "zoucheng@baihe.com"
+  },
+  "source": {
+    "git": "https://github.com/PowerCC/MobileSpeedLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MobileSpeedLib/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "GBDeviceInfo": [
+
+    ],
+    "PhoneNetSDK": [
+
+    ],
+    "CocoaAsyncSocket": [
+
+    ],
+    "INTULocationManager": [
+
+    ],
+    "JSONModel": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "FCUUID": [
+
+    ]
+  }
+}
