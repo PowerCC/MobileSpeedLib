@@ -21,6 +21,7 @@ static TestUtils *testUtils = nil;
 + (instancetype)sharedInstance {
     if (testUtils == nil) {
         testUtils = [[TestUtils alloc]init];
+        testUtils.speedUpUtils = [[SpeedUpUtils alloc] init];
     }
     return testUtils;
 }
@@ -40,10 +41,6 @@ static TestUtils *testUtils = nil;
         infoModel.intranetIP = phoneNetManager.netGetNetworkInfo.deviceNetInfo.wifiIPV4;
     } else {
         infoModel.intranetIP = phoneNetManager.netGetNetworkInfo.deviceNetInfo.cellIPV4;
-    }
-    
-    if (_speedUpUtils == nil) {
-        _speedUpUtils = [[SpeedUpUtils alloc] init];
     }
 
     [_speedUpUtils getAreaInfo:^(SpeedUpAreaInfoModel *_Nullable model) {
