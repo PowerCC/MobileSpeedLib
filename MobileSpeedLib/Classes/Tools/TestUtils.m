@@ -41,6 +41,10 @@ static TestUtils *testUtils = nil;
     } else {
         infoModel.intranetIP = phoneNetManager.netGetNetworkInfo.deviceNetInfo.cellIPV4;
     }
+    
+    if (_speedUpUtils == nil) {
+        _speedUpUtils = [[SpeedUpUtils alloc] init];
+    }
 
     [_speedUpUtils getAreaInfo:^(SpeedUpAreaInfoModel *_Nullable model) {
         infoModel.publicIP = model.ip;
