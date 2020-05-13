@@ -45,7 +45,7 @@ static TestUtils *testUtils = nil;
 
     [_speedUpUtils getAreaInfo:^(SpeedUpAreaInfoModel *_Nullable model) {
         infoModel.publicIP = model.ip;
-        infoModel.cityCode = model.code;
+        infoModel.cityCode = model.areaId;
         infoModel.location = model.regionName;
         infoModel.ispId = model.ispId;
 
@@ -165,7 +165,7 @@ static TestUtils *testUtils = nil;
                     }
 
                     res(model);
-                } token:@""];
+                } token:token];
             }];
         } else {
             [_speedUpUtils getToken:getCmGuandongTokenUrl res:^(NSString *_Nonnull token) {
@@ -176,7 +176,7 @@ static TestUtils *testUtils = nil;
                     }
 
                     res(model);
-                } token:@""];
+                } token:token];
             }];
         }
     } else {
