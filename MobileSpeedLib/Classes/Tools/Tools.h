@@ -6,7 +6,6 @@
 //  Copyright © 2020 邹程. All rights reserved.
 //
 
-#import <MBProgressHUD/MBProgressHUD.h>
 #import "Marco.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Tools : NSObject
 + (NSString *)uuidString;
 
-+ (void)showPrompt:(NSString *)text superView:(UIView *)superView numberOfLines:(NSInteger)numberOfLines afterDelay:(NSTimeInterval)afterDelay completion:(nullable MBProgressHUDCompletionBlock)completion;
++ (void)showPrompt:(NSString *)text superView:(UIView *)superView numberOfLines:(NSInteger)numberOfLines afterDelay:(NSTimeInterval)afterDelay;
 
 + (NSDictionary *)convert2DictionaryWithJSONString:(NSString *)jsonString;
 

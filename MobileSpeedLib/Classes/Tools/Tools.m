@@ -7,6 +7,7 @@
 //
 
 #import "Tools.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @implementation Tools
 
@@ -19,7 +20,7 @@
     return [uuid lowercaseString];
 }
 
-+ (void)showPrompt:(NSString *)text superView:(UIView *)superView numberOfLines:(NSInteger)numberOfLines afterDelay:(NSTimeInterval)afterDelay completion:(MBProgressHUDCompletionBlock)completion {
++ (void)showPrompt:(NSString *)text superView:(UIView *)superView numberOfLines:(NSInteger)numberOfLines afterDelay:(NSTimeInterval)afterDelay {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (text != nil) {
             MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
@@ -32,7 +33,7 @@
             hud.label.font = [UIFont systemFontOfSize:14];
             hud.offset = CGPointMake(0.0, (superView.frame.size.height - hud.frame.size.height) / 2.0);
             [hud hideAnimated:YES afterDelay:afterDelay];
-            hud.completionBlock = completion;
+            hud.completionBlock = nil;
         }
     });
 }
