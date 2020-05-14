@@ -52,27 +52,28 @@ TODO: Add long description of the pod here.
   # }
 
   # 公开头文件 打包只公开特定的头文件
-  s.public_header_files = 'MobileSpeedLib/Classes/MobileSpeedLib.h'
+  # s.public_header_files = 'MobileSpeedLib/Classes/MobileSpeedLib.h'
   
   # 调试公开所有的头文件 这个地方下面的头文件 如果是在Example中调试 就公开全部，需要打包就只公开特定的h文件
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
   # 私有头文件
-  # subcfiles.private_header_files = "MyLibrary/cfiles/**/*.h"
+  # s.private_header_files = 'MobileSpeedLib/Classes/Tools/**/*.h'
   
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
   s.static_framework = true
   
   # 载入第三方.a (如paynuc.a这种)
-  #s.vendored_libraries = 'MobileSpeedLib/Classes/openssl/include/*.{a}'
+  # s.vendored_libraries = 'MobileSpeedLib/Classes/openssl/include/*.{a}'
   
   # 载入第三方.a头文件
-  #s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/openssl/include/openssl/*.{h}' }
+  # s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/openssl/include/openssl/*.{h}' }
   
   # 链接设置 重要
-  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+  # s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
+  
   s.dependency 'AFNetworking'
   s.dependency 'GBDeviceInfo'
   s.dependency 'PhoneNetSDK'

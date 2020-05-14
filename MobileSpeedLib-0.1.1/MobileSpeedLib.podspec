@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"PowerCC"=>"zoucheng@live.cn"}
   s.homepage = "https://github.com/PowerCC/MobileSpeedLib"
   s.description = "TODO: Add long description of the pod here."
-  s.xcconfig = {"OTHER_LDFLAGS"=>"-ObjC"}
+  s.frameworks = "UIKit"
   s.source = { :path => '.' }
 
   s.ios.deployment_target    = '10.0'
