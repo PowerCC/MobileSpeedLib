@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "zoucheng@live.cn": "zoucheng@baihe.com"
+    "PowerCC": "zoucheng@live.cn"
   },
   "source": {
     "git": "https://github.com/PowerCC/MobileSpeedLib.git",
@@ -19,6 +19,8 @@
     "ios": "10.0"
   },
   "source_files": "MobileSpeedLib/Classes/**/*",
+  "static_framework": true,
+  "frameworks": "UIKit",
   "dependencies": {
     "AFNetworking": [
 

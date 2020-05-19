@@ -204,7 +204,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MobileSpeedLib/MobileSpeedLib.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PhoneNetSDK/PhoneNetSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework"
 fi
@@ -216,7 +215,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MobileSpeedLib/MobileSpeedLib.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PhoneNetSDK/PhoneNetSDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework"
 fi
