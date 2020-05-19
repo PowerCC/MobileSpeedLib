@@ -58,7 +58,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
   # 私有头文件
-  s.private_header_files = 'MobileSpeedLib/Classes/Tools/**/*.h'
+  # s.private_header_files = 'MobileSpeedLib/Classes/Tools/**/*.h'
   
   # 是否是静态库 这个地方很重要 假如不写这句打出来的包 就是动态库 不能使用 一运行会报错 image not found
   s.static_framework = true
@@ -67,7 +67,7 @@ TODO: Add long description of the pod here.
   # s.vendored_libraries = 'MobileSpeedLib/Classes/openssl/include/*.{a}'
   
   # 载入第三方.a头文件
-  # s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/openssl/include/openssl/*.{h}' }
+  s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/Tools/*.{h}' }
   
   # 链接设置 重要
   # s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
