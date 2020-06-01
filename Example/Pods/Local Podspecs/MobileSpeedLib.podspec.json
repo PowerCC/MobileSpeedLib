@@ -1,6 +1,6 @@
 {
   "name": "MobileSpeedLib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "Mobile Speed Test.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/PowerCC/MobileSpeedLib",
@@ -12,8 +12,8 @@
     "PowerCC": "zoucheng@live.cn"
   },
   "source": {
-    "git": "https://github.com/PowerCC/MobileSpeedLib.git",
-    "tag": "0.1.1"
+    "git": "/Users/zoucheng/Documents/Code/MobileSpeedLib",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "10.0"

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONModel.h"
+#import <JSONModel/JSONModel.h>
 #import "Marco.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -30,8 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *ResultMessage;
 @end
 
-@interface MyModel : JSONModel
-@property (copy, nonatomic) NSString *me;
-@end
+//@interface MyModel : JSONModel
+//@property (copy, nonatomic) NSString *me;
+//@end
 
 NS_ASSUME_NONNULL_END

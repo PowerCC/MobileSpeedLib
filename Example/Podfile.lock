@@ -23,7 +23,7 @@ PODS:
   - INTULocationManager (4.3.2)
   - JSONModel (1.8.0)
   - MBProgressHUD (1.2.0)
-  - MobileSpeedLib (0.1.1):
+  - MobileSpeedLib (0.1.2):
     - AFNetworking
     - CocoaAsyncSocket
     - FCUUID
@@ -62,10 +62,10 @@ SPEC CHECKSUMS:
   INTULocationManager: e5dc524611b0cd582f473bc56cc8c389adb2f338
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MobileSpeedLib: 19c67d3e9815a64402c8989485d3ca765b8eb751
+  MobileSpeedLib: f9e6c7b4a72652d17c95f38c180208b49108177c
   PhoneNetSDK: d0f24d066e8a7f2dd8e7c1a162d4c6910266def7
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
 
 PODFILE CHECKSUM: f7bb9a4f0ce5590c0f7ec90eb81a4f20eb3e91ec
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

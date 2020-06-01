@@ -13,11 +13,14 @@
 #import "SpeedUpUtils.h"
 #import "Traceroute.h"
 #import "SpeedUpModels.h"
-#import "PhoneNetSDK.h"
-#import "GCDAsyncUdpSocket.h"
+
+//@class PhoneNetSDK;
+@class GCDAsyncUdpSocket;
+@class PNTcpPing;
+@protocol GCDAsyncUdpSocketDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void (^PNTcpPingHandler)(NSMutableString *);
 typedef void (^DeviceInfoHandler)(DeviceInfoModel *_Nullable infoModel);
 
 @interface TestUtils : NSObject

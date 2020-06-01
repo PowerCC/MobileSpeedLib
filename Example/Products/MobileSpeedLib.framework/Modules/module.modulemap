@@ -1,0 +1,6 @@
+framework module MobileSpeedLib {
+  umbrella header "MobileSpeedLib.h"
+
+  export *
+  module * { export * }
+}

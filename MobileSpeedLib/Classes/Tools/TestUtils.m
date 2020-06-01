@@ -10,6 +10,8 @@
 #import <GBDeviceInfo/GBDeviceInfo.h>
 #import <FCUUID/FCUUID.h>
 #import <INTULocationManager/INTULocationManager.h>
+#import <PhoneNetSDK/PhoneNetSDK.h>
+#import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
 
 @interface TestUtils ()
 

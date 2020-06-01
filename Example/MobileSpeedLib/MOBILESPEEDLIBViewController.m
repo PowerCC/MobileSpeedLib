@@ -21,6 +21,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [TestUtils sharedInstance];
+//    MyModel *model = [[MyModel alloc] init];
+//    NSLog(@"MyModel: %@", model);
 }
 
 - (void)didReceiveMemoryWarning

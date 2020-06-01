@@ -20,6 +20,6 @@
 
 @end
 
-@implementation MyModel
-
-@end
+//@implementation MyModel
+//
+//@end

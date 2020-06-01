@@ -35,7 +35,8 @@ TODO: Add long description of the pod here.
   
   # spec配置文件的位置 (这里是绝对路径,文件位置变动需及时修改)
   s.source = { :git => 'https://github.com/PowerCC/MobileSpeedLib.git', :tag => s.version.to_s }
-
+  #s.source = { :git => '/Users/zoucheng/Documents/Code/MobileSpeedLib', :tag => s.version.to_s }
+  
   # 媒体文件
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
@@ -67,7 +68,7 @@ TODO: Add long description of the pod here.
   # s.vendored_libraries = 'MobileSpeedLib/Classes/openssl/include/*.{a}'
   
   # 载入第三方.a头文件
-  s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/Tools/*.{h}' }
+  # s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/Tools/*.{h}' }
   
   # 链接设置 重要
   s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
