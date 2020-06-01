@@ -70,9 +70,9 @@ TODO: Add long description of the pod here.
   s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => 'MobileSpeedLib/Classes/Tools/*.{h}' }
   
   # 链接设置 重要
-  # s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
-  s.frameworks = 'UIKit'
+  s.frameworks = 'CFNetwork','CoreGraphics','Foundation','QuartzCore','Security','UIKit'
   
   s.dependency 'AFNetworking'
   s.dependency 'GBDeviceInfo'

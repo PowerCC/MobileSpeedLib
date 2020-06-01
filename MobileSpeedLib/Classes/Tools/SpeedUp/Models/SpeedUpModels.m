@@ -19,3 +19,7 @@
 @implementation SpeedUpCancelTecentGamesQoSModel
 
 @end
+
+@implementation MyModel
+
+@end

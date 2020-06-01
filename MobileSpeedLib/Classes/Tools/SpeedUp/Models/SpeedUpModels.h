@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSONModel/JSONModel.h>
+#import "JSONModel.h"
 #import "Marco.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -28,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SpeedUpCancelTecentGamesQoSModel : JSONModel
 @property (copy, nonatomic) NSString *ResultCode;
 @property (copy, nonatomic) NSString *ResultMessage;
+@end
+
+@interface MyModel : JSONModel
+@property (copy, nonatomic) NSString *me;
 @end
 
 NS_ASSUME_NONNULL_END

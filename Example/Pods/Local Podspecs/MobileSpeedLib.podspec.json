@@ -20,7 +20,17 @@
   },
   "source_files": "MobileSpeedLib/Classes/**/*",
   "static_framework": true,
-  "frameworks": "UIKit",
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "frameworks": [
+    "CFNetwork",
+    "CoreGraphics",
+    "Foundation",
+    "QuartzCore",
+    "Security",
+    "UIKit"
+  ],
   "dependencies": {
     "AFNetworking": [
 

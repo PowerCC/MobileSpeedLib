@@ -13,8 +13,8 @@
 #import "SpeedUpUtils.h"
 #import "Traceroute.h"
 #import "SpeedUpModels.h"
-#import <PhoneNetSDK/PhoneNetSDK.h>
-#import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
+#import "PhoneNetSDK.h"
+#import "GCDAsyncUdpSocket.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

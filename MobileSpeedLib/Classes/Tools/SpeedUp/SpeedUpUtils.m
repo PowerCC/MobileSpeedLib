@@ -68,6 +68,13 @@
 }
 
 - (void)applyTecentGamesQoS:(NSString *)ip publicIp:(NSString *)publicIp applyTecentGamesQoS:(ApplyTecentGamesQoS)applyTecentGamesQoS token:(NSString *)token {
+    if (ip == nil || publicIp == nil || token == nil) {
+        if (applyTecentGamesQoS != nil) {
+            applyTecentGamesQoS(nil);
+        }
+        return;
+    }
+
     NSDictionary *ipDic1 = @{ @"DestinationIpAddress": @"223.111.237.4",
                               @"Direction": @"2",
                               @"MaximumDownStreamSpeedRate": @"50000",
@@ -102,24 +109,40 @@
     [self request:applyUrl method:@"POST" parameters:paramsDic completionHandler:^(NSURLResponse *response, id _Nullable responseObject, NSError *_Nullable error) {
         if (error) {
             NSLog(@"Error: %@", error);
-            applyTecentGamesQoS(nil);
+            if (applyTecentGamesQoS != nil) {
+                applyTecentGamesQoS(nil);
+            }
         } else {
             NSLog(@"%@ %@", response, responseObject);
             SpeedUpApplyTecentGamesQoSModel *model = [[SpeedUpApplyTecentGamesQoSModel alloc] initWithDictionary:responseObject error:nil];
-            applyTecentGamesQoS(model);
+            if (applyTecentGamesQoS != nil) {
+                applyTecentGamesQoS(model);
+            }
         }
     }];
 }
 
 - (void)cancelTecentGamesQoS:(NSString *)publicIp cancelTecentGamesQoS:(CancelTecentGamesQoS)cancelTecentGamesQoS {
+    if (publicIp == nil) {
+        if (cancelTecentGamesQoS != nil) {
+            cancelTecentGamesQoS(nil);
+        }
+        return;
+    }
+
     NSDictionary *paramsDic = @{ @"correlationId": SP_KEY_CORRELATION_ID, @"Partner_ID": @"demoapp", @"PublicIP": publicIp };
     [self request:cancelUrl method:@"GET" parameters:paramsDic completionHandler:^(NSURLResponse *response, id _Nullable responseObject, NSError *_Nullable error) {
         if (error) {
             NSLog(@"Error: %@", error);
+            if (cancelTecentGamesQoS != nil) {
+                cancelTecentGamesQoS(nil);
+            }
         } else {
             NSLog(@"%@ %@", response, responseObject);
             SpeedUpCancelTecentGamesQoSModel *model = [[SpeedUpCancelTecentGamesQoSModel alloc] initWithDictionary:responseObject error:nil];
-            cancelTecentGamesQoS(model);
+            if (cancelTecentGamesQoS != nil) {
+                cancelTecentGamesQoS(model);
+            }
         }
     }];
 }
